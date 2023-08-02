@@ -44,7 +44,7 @@ body {
   * {
     box-sizing: border-box;
   }
-
+  
   .form-content {
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
@@ -103,6 +103,7 @@ body {
     border-radius: 4px;
     resize: vertical;
   }
+  
   .profile-radio-content {
     display: flex;
     flex-direction: row;
@@ -119,7 +120,7 @@ body {
     border-radius: 50px;
     margin-left: 12px;
   }
-
+  
   select {
     padding: 12px;
     border: 1px solid #ccc;
@@ -130,6 +131,7 @@ body {
     color: #42515f;
     background-color: transparent;
   }
+  
   .buttonParent {
     display: flex;
     margin-bottom: 10px;
@@ -178,4 +180,46 @@ body {
     color: #42515f;
     margin-right: 15px;
   }
+  
+  
+  @media only screen and (max-width: 960px) {
+    .cancelButton {
+      margin-left: 0px;
+    }
+    .form {
+      width: 85%;
+      padding: 44px 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .form {
+      margin-top: 10px;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .uploadButton {
+      justify-content: flex-start;
+    }
+    .profile-radio-button {
+      flex-flow: wrap;
+    }
+    .submit-reset {
+      width: 100%;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .submitButton {
+      margin: 0;
+    }
+    .buttonParent {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
   </style>
+  
