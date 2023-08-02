@@ -162,5 +162,20 @@
   </div>
 </form>
 </div>
+<script>
+  const salaryRange = document.getElementById('salary');
+  const salaryValueOutput = document.getElementById('salaryValue');
+
+  // Function to update the displayed salary value
+  function updateSalaryValue() {
+    salaryValueOutput.innerText = salaryRange.value;
+  }
+
+  // Event listener for the salary range input
+  salaryRange.addEventListener('input', updateSalaryValue);
+
+  // Initial update to display the default salary value
+  updateSalaryValue();
+</script>
 </body>
 </html>
